@@ -18,4 +18,10 @@ new = []
 for d in data:
 	if len(d) < 100:
 		new.append(d)
-print('資料長度小於100的留言有', len(new), '則')		
+print('資料長度小於100的留言有', len(new), '則')
+
+good = []
+for d in data:
+	if 'good' in d:
+		good.append(d)
+print('留言有提到good的留言有', len(good), '則')        
