@@ -13,3 +13,9 @@ for d in data:
 	data_sum += len(d)
 data_ave = data_sum/len(data)
 print(data_ave)	
+
+new = []
+for d in data:
+	if len(d) < 100:
+		new.append(d)
+print('資料長度小於100的留言有', len(new), '則')		
