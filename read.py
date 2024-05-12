@@ -8,6 +8,8 @@ with open('reviews.txt','r') as f:
 			print(len(data))
 print(len(data))
 
-print(data[0])		
-print('-------------')
-print(data[1])
+data_sum = 0
+for d in data:
+	data_sum += len(d)
+data_ave = data_sum/len(data)
+print(data_ave)	
